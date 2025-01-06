@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Update PausePlugin to require manual unpause when the application window regains focus. [Ticket](https://www.pivotaltracker.com/story/show/188461849)
+- REDESIGN UPDATE - Update PausePlugin to require manual unpause when the application window regains focus. [Ticket](https://www.pivotaltracker.com/story/show/188461849)
 
 ## [2.5.2] - 2024-06-18
 
