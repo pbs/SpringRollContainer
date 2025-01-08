@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [3.0.0] - 2025-01-03
 
-This is the start of the websquad's fork of https://github.com/springroll/SpringRollContainer to be used in the pbskids redesign (project name "Puma").
+This is the start of the websquad's fork of https://github.com/pbs/SpringRollContainer to be used in the pbskids redesign (project name "Puma").
 
 ### Changed
 
@@ -17,7 +17,7 @@ This is the start of the websquad's fork of https://github.com/springroll/Spring
 
 ### Fixed
 
-- Ensured that CaptionsTogglePlugin internal state is maintained when reading from localStorage on startup 
+- Ensured that CaptionsTogglePlugin internal state is maintained when reading from localStorage on startup
 
 ## [2.5.1] - 2024-04-16
 
@@ -29,13 +29,13 @@ This is the start of the websquad's fork of https://github.com/springroll/Spring
 
 ### Changed
 
-- Prevent SoundPlugin from sending mute state before Application is loaded. 
-- Prevent CaptionsTogglePlugin from sending mute state before Application is loaded. 
+- Prevent SoundPlugin from sending mute state before Application is loaded.
+- Prevent CaptionsTogglePlugin from sending mute state before Application is loaded.
 - updated .nvmrc to 18
 
 ### Added
 
-- Added a check to make sure plugin preloads are finished before opening up the application to avoid race conditions. 
+- Added a check to make sure plugin preloads are finished before opening up the application to avoid race conditions.
 
 ## [2.4.6] - 2023-10-16
 
