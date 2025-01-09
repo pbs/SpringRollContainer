@@ -11,7 +11,7 @@ const plugins = [
   commonjs(),
   json(),
   eslint(),
-  babel({ sourceMap: true }),
+  babel({ babelHelpers: 'bundled', sourceMap: true }),
   terser()
 ];
 

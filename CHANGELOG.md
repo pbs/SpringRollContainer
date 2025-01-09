@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Updated 29 dependencies:
   - `@babel/core` ^7.4.3 --> ^7.26.0
-  - `@babel/polyfill` ^7.4.3 --> ^7.12.1 (latest version before deprecation.)
+  - `@babel/polyfill` ^7.4.3 --> ^7.12.1 (Latest version before deprecation. Should be removed at some point, if possible.)
   - `@babel/preset-env` ^7.4.3 --> ^7.26.0
   - `@rollup/plugin-babel` ^6.0.3 --> ^6.0.4
   - `@rollup/plugin-commonjs` ^24.0.1 --> ^28.0.2
@@ -35,8 +35,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `karma-webpack` ^5.0.0 --> ^5.0.1
   - `mocha` ^10.2.0 --> ^10.8.2 (upgrading to v11 breaks tests, to be fixed at a later date.)
   - `requirejs` ^2.3.6 --> ^2.3.7
-  - `rollup` ^3.17.2 --> ^3.29.5
-  - `sinon` ^7.5.0 --> ^8.1.1 (upgrading beyond this version breaks tests, to be fixed at a later date.)
+  - `rollup` ^3.17.2 --> ^4.30.1
+  - `sinon` ^7.5.0 --> ^19.0.2
   - `webpack` ^5.8.22 --> ^5.97.1
   - `whatwg-fetch` ^3.0.0 --> ^3.6.20
 
