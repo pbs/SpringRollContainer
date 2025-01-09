@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Updated Node.js version to v20.18.1
 - Updated 29 dependencies:
   - `@babel/core` ^7.4.3 --> ^7.26.0
   - `@babel/polyfill` ^7.4.3 --> ^7.12.1 (Latest version before deprecation. Should be removed at some point, if possible.)
