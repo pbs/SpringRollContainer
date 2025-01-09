@@ -5,12 +5,40 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [3.0.1] - Unreleased
+## [3.1.0] - Unreleased
 
 ### Changed
 
-- Updated the following dependencies (via dependabot):
+- Updated 29 dependencies:
+  - `@babel/core` ^7.4.3 --> ^7.26.0
+  - `@babel/polyfill` ^7.4.3 --> ^7.12.1 (latest version before deprecation.)
+  - `@babel/preset-env` ^7.4.3 --> ^7.26.0
+  - `@rollup/plugin-babel` ^6.0.3 --> ^6.0.4
+  - `@rollup/plugin-commonjs` ^24.0.1 --> ^28.0.2
+  - `@rollup/plugin-eslint` ^9.0.3 --> ^9.0.5
+  - `@rollup/plugin-json` ^6.0.0 --> ^6.1.0
+  - `@rollup/plugin-node-resolve` ^15.0.1 --> ^16.0.0
+  - `@rollup/plugin-terser` ^0.4.0 --> ^0.4.4
+  - `babel-loader` ^8.0.5 --> ^9.2.1
+  - `bellhop-iframe` ^3.2.0 --> ^3.6.0
+  - `chai` ^4.2.0 --> ^4.5.0 (upgrading to v5 breaks tests, to be fixed at a later date.)
+  - `core-js` ^3.6.5 --> ^3.40.0
+  - `dotenv` ^7.0.0 --> ^16.4.7
+  - `eslint` ^8.43.0 --> ^9.17.0
+  - `eslint-plugin-import` ^2.17.2 --> ^2.31.0
+  - `eslint-plugin-node` ^8.0.1 --> ^11.1.0
+  - `eslint-plugin-prettier` ^3.0.1 --> ^5.2.1
+  - `karma` ^6.3.17 --> ^6.4.4
+  - `karma-babel-preprocessor` ^8.0.0 --> ^8.0.2
+  - `karma-browserstack-launcher` ^1.5.1 --> ^1.6.0
+  - `karma-rollup-preprocessor` ^7.0.5--> ^7.0.8
+  - `karma-webpack` ^5.0.0 --> ^5.0.1
+  - `mocha` ^10.2.0 --> ^10.8.2 (upgrading to v11 breaks tests, to be fixed at a later date.)
+  - `requirejs` ^2.3.6 --> ^2.3.7
   - `rollup` ^3.17.2 --> ^3.29.5
+  - `sinon` ^7.5.0 --> ^8.1.1 (upgrading beyond this version breaks tests, to be fixed at a later date.)
+  - `webpack` ^5.8.22 --> ^5.97.1
+  - `whatwg-fetch` ^3.0.0 --> ^3.6.20
 
 ## [3.0.0] - 2025-01-03
 
