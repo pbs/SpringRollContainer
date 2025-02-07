@@ -5,7 +5,6 @@ import './HelpPlugin.spec';
 import './PausePlugin.spec';
 import './Plugin.spec';
 import './SoundPlugin.spec';
-import './UserDataPlugin.spec';
 import './PointerSizePlugin.spec';
 import './ButtonSizePlugin.spec';
 import './ControlSensitivityPlugin.spec';
