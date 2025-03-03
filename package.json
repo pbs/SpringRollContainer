@@ -1,13 +1,13 @@
 {
   "name": "springroll-container",
-  "version": "2.5.2",
+  "version": "3.0.0",
   "description": "The iframe controller for interacting with SpringRoll applications",
   "main": "./dist/index.js",
   "license": "MIT",
   "typings": "typings/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SpringRoll/SpringRollContainer"
+    "url": "https://github.com/pbs/SpringRollContainer"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -70,7 +70,7 @@
   },
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/SpringRoll/SpringRollContainer/issues"
+    "url": "https://github.com/pbs/SpringRollContainer/issues"
   },
-  "homepage": "https://github.com/SpringRoll/SpringRollContainer"
+  "homepage": "https://github.com/pbs/SpringRollContainer"
 }
