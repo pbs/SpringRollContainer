@@ -44,6 +44,11 @@ export class SoundPlugin extends ButtonPlugin {
   sfxButtonsLength: number;
   voButtonsLength: number;
 
+  soundMutedEnabled: boolean;
+  sfxMutedEnabled: boolean;
+  voMutedEnabled: boolean;
+  musicMutedEnabled: boolean;
+
   onSoundVolumeChange(e: Event): void;
   onMusicVolumeChange(e: Event): void;
   onVoVolumeChange(e: Event): void;
