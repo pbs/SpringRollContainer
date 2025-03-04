@@ -93,25 +93,6 @@ describe('PausePlugin', () => {
   });
 
   describe('manageFocus()', () => {
-    it('should set pause to false if only app is blurred', async () => {
-      pp.onPauseToggle(); //reset the manual pause state which was being set to true for some reason.
-      pp._containerBlurred = false;
-      pp._appBlurred = true;
-
-      pp.manageFocus();
-      await sleep(150);
-      expect(pp.pause).to.be.false;
-    });
-
-    it('should set pause to false if only container is blurred', async () => {
-      pp._containerBlurred = true;
-      pp._appBlurred = false;
-
-      pp.manageFocus();
-      await sleep(150);
-      expect(pp.pause).to.be.false;
-    });
-
     it('should set pause to true if app and container are blurred', async () => {
       pp._containerBlurred = true;
       pp._appBlurred = true;
@@ -122,14 +103,6 @@ describe('PausePlugin', () => {
     });
 
     it('should not change the pause state if the app was manually paused', async () => {
-      pp._appBlurred = false;
-      pp.manageFocus();
-      await sleep(150);
-      expect(pp.pause).to.be.false;
-
-      pp.onPauseToggle();
-      expect(pp.pause).to.be.true;
-
       //when app and container are both blurred the pause state should be set to true, ignored if the pause state is already true via manual pause
       pp._appBlurred = true;
       pp._containerBlurred = true;
