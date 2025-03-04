@@ -6,7 +6,6 @@ import {
   HelpPlugin,
   PausePlugin,
   SoundPlugin,
-  UserDataPlugin,
   PointerSizePlugin,
   ButtonSizePlugin,
   LayersPlugin,
@@ -144,7 +143,6 @@ describe('End to End Test', () => {
       voSliders: '#voSlider',
       sfxSliders: '#sfxSlider'
     });
-    const userDataPlugin = new UserDataPlugin();
     const helpPlugin = new HelpPlugin('#helpButton');
     const controlSensitivityPlugin = new ControlSensitivityPlugin('#sensitivitySlider');
     keyboardMapPlugin = new KeyboardMapPlugin('#keyContainer');
@@ -170,7 +168,6 @@ describe('End to End Test', () => {
         captionsStylePlugin,
         pausePlugin,
         soundPlugin,
-        userDataPlugin,
         helpPlugin,
         controlSensitivityPlugin,
         keyboardMapPlugin,
@@ -316,23 +313,5 @@ describe('End to End Test', () => {
       done();
     });
     container.client.trigger('keepFocus');
-  });
-  it('userDataRemoved', done => {
-    container.client.on('userDataRemoved', () => {
-      done();
-    });
-    container.client.trigger('userDataRemoved');
-  });
-  it('userDataRead', done => {
-    container.client.on('userDataRead', () => {
-      done();
-    });
-    container.client.trigger('userDataRead');
-  });
-  it('userDataWrite', done => {
-    container.client.on('userDataWrite', () => {
-      done();
-    });
-    container.client.trigger('userDataWrite');
   });
 });
