@@ -40,6 +40,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `sinon` ^7.5.0 --> ^19.0.2
   - `webpack` ^5.8.22 --> ^5.97.1
   - `whatwg-fetch` ^3.0.0 --> ^3.6.20
+- Add Muted properties to Sound Plugin Type. [Part of ticket](https://pbskids.atlassian.net/browse/WEB-109)
 - Updated Pause Plugin unit tests to reflect updated Pause functionality.
 
 ### Removed
