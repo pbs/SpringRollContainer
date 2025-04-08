@@ -26,7 +26,7 @@ export class FullScreenPlugin extends ButtonPlugin {
       buttonSelector = buttonSelector.join(', ');
     }
 
-    console.log(buttonSelector);
+    console.log('SRC - web fork - FullScreenPlugin', { buttonSelector });
     
     this.toggleButton = document.querySelectorAll(buttonSelector);
 
@@ -91,7 +91,7 @@ export class FullScreenPlugin extends ButtonPlugin {
       this.iFrame.requestFullscreen().then(() => {
         this.sendAllProperties();
       }).catch((err) => {
-        console.log(err);
+        console.log('SRC - web fork - FullScreenPlugin', err);
       });
     } else {
       document.exitFullscreen();
