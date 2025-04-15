@@ -69,6 +69,13 @@ export class PausePlugin extends ButtonPlugin {
     }
     this._paused = paused;
 
+    // Check that we still have a game iframe before sending events, as
+    // the pause event might have been triggered by a page change within
+    // a SPA, and the iframe, Bellhop etc. may no longer be available.
+    if (!this.iframe) {
+      return;
+    }
+
     this.client.send(PausePlugin.pauseKey, paused);
     this.client.trigger(paused ? 'paused' : 'resumed', { paused });
 
