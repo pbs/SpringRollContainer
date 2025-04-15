@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.0.1] - Unreleased
 
+### Changed
+
+- Improved logging messages for QA.
+
 ### Fixed
 
 - Fix for PausePlugin generating an error when a page changes within a SPA. [Ticket](https://pbskids.atlassian.net/browse/WEB-287)
