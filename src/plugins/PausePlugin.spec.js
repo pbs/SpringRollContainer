@@ -7,8 +7,12 @@ const sleep = (millis) => {
 
 let pp;
 before(() => {
-  const button = document.createElement('button');
   document.body.innerHTML = '';
+  const iframe = document.createElement('iframe');
+  const contentWin = document.createElement('contentWindow');
+  iframe.appendChild(contentWin);
+  document.body.appendChild(iframe);
+  const button = document.createElement('button');
   button.id = 'test';
   document.body.appendChild(button);
   const buttonTwo = document.createElement('button');
@@ -16,6 +20,7 @@ before(() => {
   document.body.appendChild(buttonTwo);
   pp = new PausePlugin('#test, #testTwo');
   pp.preload({ client: new Bellhop() });
+  pp.iframe = iframe;
 });
 describe('PausePlugin', () => {
   it('construct', () => {
